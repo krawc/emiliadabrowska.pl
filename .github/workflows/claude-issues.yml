@@ -78,11 +78,11 @@ jobs:
           fi
 
           # Option B: branch exists but no PR → merge directly
-          BRANCH=$(git branch -r | grep -E "origin/claude.*(issue-)?${ISSUE}" | head -1 | tr -d ' ')
+          BRANCH=$(git branch -r | grep "origin/claude/issue-${ISSUE}-" | head -1 | tr -d ' ')
           if [ -n "$BRANCH" ]; then
             echo "Merging branch $BRANCH directly"
             git checkout main
-            git merge --squash "$BRANCH"
+            git merge --squash --allow-unrelated-histories "$BRANCH"
             git commit -m "Site edit from issue #${ISSUE}" || echo "Nothing to commit"
             git push origin main
             git push origin --delete "${BRANCH#origin/}" 2>/dev/null || true
