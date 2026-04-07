@@ -57,27 +57,36 @@ jobs:
             6. Jeśli czegoś nie możesz zrobić bezpiecznie (np. prośba wymaga zmian spoza zakresu treści, lub jest niejasna), zostaw komentarz w issue wyjaśniający co jest potrzebne do realizacji. Nie otwieraj PR z częściowymi lub ryzykownymi zmianami.
             7. Jeśli prośba dotyczy dodania nowego odcinka podcastu, wydarzenia lub produktu w sklepie — dodaj nowy element do odpowiedniej tablicy w JSON, zachowując istniejącą strukturę.
 
-      - name: Auto-merge Claude PR
+      - name: Merge Claude changes to main
         if: always()
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           ISSUE="${{ github.event.issue.number }}"
-          PR=""
-          for i in 1 2 3 4 5; do
-            sleep 10
-            PR=$(gh pr list --state open --json number,headRefName \
-              --jq ".[] | select(.headRefName | test(\"claude.*issue-${ISSUE}\")) | .number" \
-              | head -1)
-            if [ -n "$PR" ]; then
-              echo "Found PR #$PR on attempt $i"
-              break
-            fi
-            echo "Attempt $i: no PR yet..."
-          done
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git fetch origin
+
+          # Option A: open PR exists → merge it
+          PR=$(gh pr list --state open --json number,headRefName \
+            --jq ".[] | select(.headRefName | test(\"claude.*${ISSUE}\")) | .number" \
+            | head -1)
           if [ -n "$PR" ]; then
+            echo "Merging PR #$PR"
             gh pr merge "$PR" --squash --admin --delete-branch
-            echo "Merged PR #$PR to main"
-          else
-            echo "No Claude PR found after 5 attempts"
+            exit 0
           fi
+
+          # Option B: branch exists but no PR → merge directly
+          BRANCH=$(git branch -r | grep -E "origin/claude.*(issue-)?${ISSUE}" | head -1 | tr -d ' ')
+          if [ -n "$BRANCH" ]; then
+            echo "Merging branch $BRANCH directly"
+            git checkout main
+            git merge --squash "$BRANCH"
+            git commit -m "Site edit from issue #${ISSUE}" || echo "Nothing to commit"
+            git push origin main
+            git push origin --delete "${BRANCH#origin/}" 2>/dev/null || true
+            exit 0
+          fi
+
+          echo "No Claude changes found for issue #${ISSUE}"
