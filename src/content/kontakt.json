@@ -1,10 +1,10 @@
 {
   "meta": {
-    "title": "Kontakt — Emilia Dąbrowska",
-    "description": "Skontaktuj się z Emilią Dąbrowską — sesje coachingowe, wykłady, media."
+    "title": "Kontakt - Emilia Dąbrowska",
+    "description": "Skontaktuj się z Emilią Dąbrowską - sesje coachingowe, wykłady, media."
   },
   "heading": "Kontakt",
-  "content": "<p>Napisz do mnie — chętnie odpiszę na każdą wiadomość. Staram się odpowiadać w ciągu 2–3 dni roboczych.</p>",
+  "content": "<p>Napisz do mnie - chętnie odpiszę na każdą wiadomość. Staram się odpowiadać w ciągu 2–3 dni roboczych.</p>",
   "email": "emilia@emiliadabrowska.pl",
   "social": [
     { "name": "Instagram", "handle": "@emiliadabrowska", "url": "#" },
@@ -17,7 +17,7 @@
       "Coaching indywidualny",
       "Warsztaty grupowe / retreat",
       "Wykład lub szkolenie dla firmy",
-      "Podcast — propozycja gościa",
+      "Podcast - propozycja gościa",
       "Media i współpraca",
       "Inne"
     ]},
