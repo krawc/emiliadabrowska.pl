@@ -14,8 +14,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Emilia Dąbrowska — Psycholożka & Coach",
-  description: "Psycholożka, coach i mówczyni. Pomagam kobietom odkrywać swój potencjał i żyć w zgodzie z sobą.",
+  title: "Emilia Dąbrowska — Psycholożka & Coachka",
+  description: "Psycholożka, coachka i mówczyni. Pomagam kobietom odkrywać swój potencjał i żyć w zgodzie z sobą.",
 };
 
 export default function RootLayout({
