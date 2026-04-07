@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "title": "Kontakt — Emilia Dąbrowska",
+    "description": "Skontaktuj się z Emilią Dąbrowską — sesje coachingowe, wykłady, media."
+  },
+  "heading": "Kontakt",
+  "content": "<p>Napisz do mnie — chętnie odpiszę na każdą wiadomość. Staram się odpowiadać w ciągu 2–3 dni roboczych.</p>",
+  "email": "emilia@emiliadabrowska.pl",
+  "social": [
+    { "name": "Instagram", "handle": "@emiliadabrowska", "url": "#" },
+    { "name": "LinkedIn", "handle": "Emilia Dąbrowska", "url": "#" }
+  ],
+  "formFields": [
+    { "name": "name", "label": "Imię i nazwisko", "type": "text", "required": true },
+    { "name": "email", "label": "Adres e-mail", "type": "email", "required": true },
+    { "name": "subject", "label": "Temat", "type": "select", "required": true, "options": [
+      "Coaching indywidualny",
+      "Warsztaty grupowe / retreat",
+      "Wykład lub szkolenie dla firmy",
+      "Podcast — propozycja gościa",
+      "Media i współpraca",
+      "Inne"
+    ]},
+    { "name": "message", "label": "Wiadomość", "type": "textarea", "required": true }
+  ],
+  "submitLabel": "Wyślij wiadomość",
+  "successMessage": "Dziękuję za wiadomość! Odezwę się wkrótce."
+}

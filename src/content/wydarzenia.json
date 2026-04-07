@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "title": "Wydarzenia — Emilia Dąbrowska",
+    "description": "Nadchodzące warsztaty, wykłady i spotkania z Emilią Dąbrowską."
+  },
+  "heading": "Wydarzenia",
+  "content": "<p>Regularnie organizuję <strong>warsztaty, wykłady i spotkania</strong> — stacjonarnie w Warszawie i online. Sprawdź nadchodzące terminy i zarezerwuj swoje miejsce.</p>",
+  "events": [
+    {
+      "id": 1,
+      "title": "Warsztat: Odkryj swój potencjał",
+      "type": "Warsztat grupowy",
+      "date": "12 kwietnia 2025",
+      "time": "10:00–17:00",
+      "location": "Warszawa, ul. Mokotowska 12",
+      "locationOnline": false,
+      "description": "Intensywny warsztat jednodniowy dla kobiet, które chcą wyjść z impasu i ruszyć do przodu. Pracujemy z przekonaniami, wartościami i wizją siebie.",
+      "price": "490 zł",
+      "spotsLeft": 4,
+      "image": "/images/wydarzenie-1.svg",
+      "ticketUrl": "#"
+    },
+    {
+      "id": 2,
+      "title": "Wykład online: Kobieca przywódczość",
+      "type": "Wykład online",
+      "date": "24 kwietnia 2025",
+      "time": "19:00–20:30",
+      "location": "Online (Zoom)",
+      "locationOnline": true,
+      "description": "Webinar o tym, jak kobiety przywodzą — inaczej niż myślisz. Bez masek, bez udawania. Wejdź w swoją siłę.",
+      "price": "79 zł",
+      "spotsLeft": 28,
+      "image": "/images/wydarzenie-2.svg",
+      "ticketUrl": "#"
+    },
+    {
+      "id": 3,
+      "title": "Retreat: 3 dni z Emilią",
+      "type": "Retreat",
+      "date": "9–11 maja 2025",
+      "time": "Przyjazd w piątek 16:00",
+      "location": "Ośrodek Mazury, Giżycko",
+      "locationOnline": false,
+      "description": "Trzydniowy retreat dla 12 kobiet w pięknej przestrzeni na Mazurach. Coaching, joga, natura i prawdziwe rozmowy. Jedno z tych doświadczeń, które zmieniają.",
+      "price": "1 890 zł (nocleg + wyżywienie w cenie)",
+      "spotsLeft": 2,
+      "image": "/images/wydarzenie-3.svg",
+      "ticketUrl": "#"
+    }
+  ]
+}

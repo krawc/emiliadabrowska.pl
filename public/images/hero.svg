@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="900" viewBox="0 0 800 900">
+  <rect width="800" height="900" fill="#1a1a1a"/>
+  <rect x="0" y="0" width="800" height="900" fill="url(#grad)"/>
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d2d2d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a0a0a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <text x="400" y="430" font-family="Georgia, serif" font-size="28" fill="#888" text-anchor="middle">Emilia Dąbrowska</text>
+  <text x="400" y="470" font-family="Arial, sans-serif" font-size="14" fill="#555" text-anchor="middle">[ zdjęcie profilowe ]</text>
+  <circle cx="400" cy="300" r="120" fill="none" stroke="#444" stroke-width="1"/>
+  <text x="400" y="308" font-family="Georgia, serif" font-size="60" fill="#555" text-anchor="middle">ED</text>
+</svg>
