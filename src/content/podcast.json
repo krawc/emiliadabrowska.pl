@@ -1,19 +1,19 @@
 {
   "meta": {
     "title": "Podcast - Emilia Dąbrowska",
-    "description": "Kobieta w Centrum - podcast o kobiecej sile, samoświadomości i życiu na własnych warunkach."
+    "description": "Bez Wstydu - podcast o kobiecej sile, samoświadomości i życiu na własnych warunkach."
   },
   "heading": "Podcast",
-  "podcastName": "Kobieta w Centrum",
+  "podcastName": "Bez Wstydu",
   "podcastDescription": "Rozmawiam z inspirującymi kobietami o ich drodze do siebie. O kryzysach, przełomach i odwadze, żeby żyć po swojemu.",
   "coverImage": "/images/podcast-cover.svg",
-  "coverImageAlt": "Kobieta w Centrum - okładka podcastu",
+  "coverImageAlt": "Bez Wstydu - okładka podcastu",
   "platforms": [
     { "name": "Spotify", "url": "#" },
     { "name": "Apple Podcasts", "url": "#" },
     { "name": "Google Podcasts", "url": "#" }
   ],
-  "content": "<p>Podcast <strong>Kobieta w Centrum</strong> powstał z potrzeby serca. Chciałam stworzyć miejsce, gdzie kobiety mogą usłyszeć prawdziwe, nieocenzurowane historie innych kobiet - bez lukru i udawania, że wszystko jest idealnie.</p><p>Co dwa tygodnie rozmawiam z kobietami, które przeszły przez trudne doświadczenia i wyszły z nich silniejsze. Moimi gośćmi są przedsiębiorczynie, artystki, matki, liderki - kobiety z krwi i kości, które zdecydowały się żyć na własnych warunkach.</p>",
+  "content": "<p>Podcast <strong>Bez Wstydu</strong> powstał z potrzeby serca. Chciałam stworzyć miejsce, gdzie kobiety mogą usłyszeć prawdziwe, nieocenzurowane historie innych kobiet - bez lukru i udawania, że wszystko jest idealnie.</p><p>Co dwa tygodnie rozmawiam z kobietami, które przeszły przez trudne doświadczenia i wyszły z nich silniejsze. Moimi gośćmi są przedsiębiorczynie, artystki, matki, liderki - kobiety z krwi i kości, które zdecydowały się żyć na własnych warunkach.</p>",
   "episodes": [
     {
       "number": 42,
