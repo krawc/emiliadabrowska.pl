@@ -67,8 +67,7 @@ jobs:
           for i in 1 2 3 4 5; do
             sleep 10
             PR=$(gh pr list --state open --json number,headRefName \
-              --jq --arg issue "$ISSUE" \
-              '.[] | select(.headRefName | test("claude.*issue-" + $issue)) | .number' \
+              --jq ".[] | select(.headRefName | test(\"claude.*issue-${ISSUE}\")) | .number" \
               | head -1)
             if [ -n "$PR" ]; then
               echo "Found PR #$PR on attempt $i"
