@@ -53,6 +53,22 @@ jobs:
                - Tytułem po polsku, zrozumiałym dla osoby nietechnicznej (np. "Aktualizacja tekstu na stronie głównej")
                - Opisem po polsku wyjaśniającym co zostało zmienione i dlaczego — bez żargonu technicznego
                - Referencją do issue (np. "Closes #123")
-            5. NIE merguj PR — zostaw go do zatwierdzenia przez właściciela.
+            5. Otwórz PR — zostanie automatycznie zmergowany przez workflow.
             6. Jeśli czegoś nie możesz zrobić bezpiecznie (np. prośba wymaga zmian spoza zakresu treści, lub jest niejasna), zostaw komentarz w issue wyjaśniający co jest potrzebne do realizacji. Nie otwieraj PR z częściowymi lub ryzykownymi zmianami.
             7. Jeśli prośba dotyczy dodania nowego odcinka podcastu, wydarzenia lub produktu w sklepie — dodaj nowy element do odpowiedniej tablicy w JSON, zachowując istniejącą strukturę.
+
+      - name: Auto-merge Claude PR
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          sleep 5
+          PR=$(gh pr list --state open --json number,headRefName \
+            --jq '.[] | select(.headRefName | startswith("claude/issue-${{ github.event.issue.number }}-")) | .number' \
+            | head -1)
+          if [ -n "$PR" ]; then
+            echo "Merging PR #$PR"
+            gh pr merge "$PR" --squash --admin --delete-branch
+          else
+            echo "No Claude PR found to merge"
+          fi
