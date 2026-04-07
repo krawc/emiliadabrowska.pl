@@ -1,23 +1,23 @@
 {
   "meta": {
-    "title": "Podcast — Emilia Dąbrowska",
-    "description": "Kobieta w Centrum — podcast o kobiecej sile, samoświadomości i życiu na własnych warunkach."
+    "title": "Podcast - Emilia Dąbrowska",
+    "description": "Kobieta w Centrum - podcast o kobiecej sile, samoświadomości i życiu na własnych warunkach."
   },
   "heading": "Podcast",
   "podcastName": "Kobieta w Centrum",
   "podcastDescription": "Rozmawiam z inspirującymi kobietami o ich drodze do siebie. O kryzysach, przełomach i odwadze, żeby żyć po swojemu.",
   "coverImage": "/images/podcast-cover.svg",
-  "coverImageAlt": "Kobieta w Centrum — okładka podcastu",
+  "coverImageAlt": "Kobieta w Centrum - okładka podcastu",
   "platforms": [
     { "name": "Spotify", "url": "#" },
     { "name": "Apple Podcasts", "url": "#" },
     { "name": "Google Podcasts", "url": "#" }
   ],
-  "content": "<p>Podcast <strong>Kobieta w Centrum</strong> powstał z potrzeby serca. Chciałam stworzyć miejsce, gdzie kobiety mogą usłyszeć prawdziwe, nieocenzurowane historie innych kobiet — bez lukru i udawania, że wszystko jest idealnie.</p><p>Co dwa tygodnie rozmawiam z kobietami, które przeszły przez trudne doświadczenia i wyszły z nich silniejsze. Moimi gośćmi są przedsiębiorczynie, artystki, matki, liderki — kobiety z krwi i kości, które zdecydowały się żyć na własnych warunkach.</p>",
+  "content": "<p>Podcast <strong>Kobieta w Centrum</strong> powstał z potrzeby serca. Chciałam stworzyć miejsce, gdzie kobiety mogą usłyszeć prawdziwe, nieocenzurowane historie innych kobiet - bez lukru i udawania, że wszystko jest idealnie.</p><p>Co dwa tygodnie rozmawiam z kobietami, które przeszły przez trudne doświadczenia i wyszły z nich silniejsze. Moimi gośćmi są przedsiębiorczynie, artystki, matki, liderki - kobiety z krwi i kości, które zdecydowały się żyć na własnych warunkach.</p>",
   "episodes": [
     {
       "number": 42,
-      "title": "Kiedy wszystko się wali — jak znaleźć grunt pod nogami",
+      "title": "Kiedy wszystko się wali - jak znaleźć grunt pod nogami",
       "guest": "Marta Kowalska",
       "guestTitle": "terapeutka, autorka",
       "duration": "58 min",
@@ -27,17 +27,17 @@
     },
     {
       "number": 41,
-      "title": "Prowadzenie biznesu z wartościami — czy to możliwe?",
+      "title": "Prowadzenie biznesu z wartościami - czy to możliwe?",
       "guest": "Anna Wiśniewska",
       "guestTitle": "CEO & przedsiębiorczyni",
       "duration": "62 min",
       "date": "1 marca 2025",
-      "description": "Anna opowiada o budowaniu firmy, która nie kompromituje jej wartości — nawet gdy to kosztuje.",
+      "description": "Anna opowiada o budowaniu firmy, która nie kompromituje jej wartości - nawet gdy to kosztuje.",
       "url": "#"
     },
     {
       "number": 40,
-      "title": "Ciało jako sojusznik — intuicja i mądrość ciała",
+      "title": "Ciało jako sojusznik - intuicja i mądrość ciała",
       "guest": "Zofia Adamska",
       "guestTitle": "somatyczka, nauczycielka jogi",
       "duration": "55 min",
@@ -47,7 +47,7 @@
     },
     {
       "number": 39,
-      "title": "Perfekcjonizm — wróg czy sprzymierzeniec?",
+      "title": "Perfekcjonizm - wróg czy sprzymierzeniec?",
       "guest": "Emilia Dąbrowska",
       "guestTitle": "(odcinek solo)",
       "duration": "38 min",

@@ -1,10 +1,10 @@
 {
   "meta": {
-    "title": "Wydarzenia — Emilia Dąbrowska",
+    "title": "Wydarzenia - Emilia Dąbrowska",
     "description": "Nadchodzące warsztaty, wykłady i spotkania z Emilią Dąbrowską."
   },
   "heading": "Wydarzenia",
-  "content": "<p>Regularnie organizuję <strong>warsztaty, wykłady i spotkania</strong> — stacjonarnie w Warszawie i online. Sprawdź nadchodzące terminy i zarezerwuj swoje miejsce.</p>",
+  "content": "<p>Regularnie organizuję <strong>warsztaty, wykłady i spotkania</strong> - stacjonarnie w Warszawie i online. Sprawdź nadchodzące terminy i zarezerwuj swoje miejsce.</p>",
   "events": [
     {
       "id": 1,
@@ -28,7 +28,7 @@
       "time": "19:00–20:30",
       "location": "Online (Zoom)",
       "locationOnline": true,
-      "description": "Webinar o tym, jak kobiety przywodzą — inaczej niż myślisz. Bez masek, bez udawania. Wejdź w swoją siłę.",
+      "description": "Webinar o tym, jak kobiety przywodzą - inaczej niż myślisz. Bez masek, bez udawania. Wejdź w swoją siłę.",
       "price": "79 zł",
       "spotsLeft": 28,
       "image": "/images/wydarzenie-2.svg",
