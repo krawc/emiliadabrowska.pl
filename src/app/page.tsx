@@ -32,7 +32,7 @@ export default function HomePage() {
         >
           {content.heading}
         </h1>
-        <p className="text-xs tracking-widest uppercase text-stone-400 mb-10">
+        <p className="text-xs tracking-widest uppercase text-stone-400 mb-10 whitespace-pre-line leading-6">
           {content.subheading}
         </p>
         <HtmlContent html={content.content} />

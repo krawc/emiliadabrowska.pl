@@ -1,58 +1,19 @@
 {
   "meta": {
-    "title": "Sklep - Emilia Dąbrowska",
-    "description": "E-booki, audiobooki, kursy online i bilety na wydarzenia."
+    "title": "Sklep – Emilia Dąbrowska",
+    "description": "Kursy online, bilety na wydarzenia, e-booki i audiobooki."
   },
   "heading": "Sklep",
-  "content": "<p>Znajdziesz tutaj moje materiały: <strong>e-booki, audiobooki, kursy online</strong> oraz bilety na nadchodzące wydarzenia. Wszystko stworzone z myślą o kobietach, które chcą rosnąć.</p>",
+  "content": "<p>Znajdziesz tutaj moje materiały: <strong>kursy online, e-booki, audiobooki</strong> oraz bilety na nadchodzące wydarzenia.</p>",
   "categories": [
     {
-      "id": "ebooki",
-      "name": "E-booki",
-      "items": [
-        {
-          "id": "eb-1",
-          "title": "Odkryj siebie. Przewodnik po własnym wnętrzu",
-          "description": "50-stronicowy e-book z ćwiczeniami do samodzielnej pracy. Idealne na start drogi do siebie.",
-          "price": "49 zł",
-          "image": "/images/ebook-1.svg",
-          "badge": "Bestseller",
-          "url": "#"
-        },
-        {
-          "id": "eb-2",
-          "title": "Granice - jak je stawiać bez poczucia winy",
-          "description": "Praktyczny przewodnik po zdrowych granicach w relacjach. Z prawdziwymi przykładami i ćwiczeniami.",
-          "price": "39 zł",
-          "image": "/images/ebook-2.svg",
-          "badge": null,
-          "url": "#"
-        }
-      ]
-    },
-    {
-      "id": "audiobooki",
-      "name": "Audiobooki",
-      "items": [
-        {
-          "id": "ab-1",
-          "title": "Kobieta w centrum - słuchowisko",
-          "description": "Godzinne nagranie z moim głosem. Medytacje, ćwiczenia i inspiracje - słuchaj podczas spaceru.",
-          "price": "59 zł",
-          "image": "/images/audiobook-1.svg",
-          "badge": "Nowość",
-          "url": "#"
-        }
-      ]
-    },
-    {
       "id": "kursy",
-      "name": "Kursy online",
+      "name": "Kursy",
       "items": [
         {
           "id": "k-1",
           "title": "30-dniowe wyzwanie: Zacznij żyć po swojemu",
-          "description": "Codzienny program przez 30 dni - krótkie wideo, zadania i wsparcie w grupie zamkniętej.",
+          "description": "Codzienny program przez 30 dni — krótkie wideo, zadania i wsparcie w grupie zamkniętej.",
           "price": "197 zł",
           "image": "/images/kurs-1.svg",
           "badge": "Popularne",
@@ -60,7 +21,7 @@
         },
         {
           "id": "k-2",
-          "title": "Coaching dla siebie - kurs online 8 tygodni",
+          "title": "Coaching dla siebie — kurs online 8 tygodni",
           "description": "Naucz się coachingowego podejścia do własnego życia. 8 modułów wideo + workbook + dostęp na zawsze.",
           "price": "497 zł",
           "image": "/images/kurs-2.svg",
@@ -75,7 +36,7 @@
       "items": [
         {
           "id": "bil-1",
-          "title": "Warsztat: Odkryj swój potencjał - 12.04.2025",
+          "title": "Warsztat: Odkryj swój potencjał – 12.04.2025",
           "description": "Warszawa, godz. 10:00. Intensywny warsztat jednodniowy. Ostatnie 4 miejsca!",
           "price": "490 zł",
           "image": "/images/wydarzenie-1.svg",
@@ -84,11 +45,44 @@
         },
         {
           "id": "bil-2",
-          "title": "Wykład online: Kobieca przywódczość - 24.04.2025",
+          "title": "Wykład online: Kobieca przywódczość – 24.04.2025",
           "description": "Online (Zoom), godz. 19:00. Webinar 90 minut.",
           "price": "79 zł",
           "image": "/images/wydarzenie-2.svg",
           "badge": null,
+          "url": "#"
+        }
+      ]
+    },
+    {
+      "id": "ebooki-audiobooki",
+      "name": "E-booki i audiobooki",
+      "items": [
+        {
+          "id": "eb-1",
+          "title": "Odkryj siebie. Przewodnik po własnym wnętrzu",
+          "description": "50-stronicowy e-book z ćwiczeniami do samodzielnej pracy. Idealne na start drogi do siebie.",
+          "price": "49 zł",
+          "image": "/images/ebook-1.svg",
+          "badge": "Bestseller",
+          "url": "#"
+        },
+        {
+          "id": "eb-2",
+          "title": "Granice — jak je stawiać bez poczucia winy",
+          "description": "Praktyczny przewodnik po zdrowych granicach w relacjach. Z prawdziwymi przykładami i ćwiczeniami.",
+          "price": "39 zł",
+          "image": "/images/ebook-2.svg",
+          "badge": null,
+          "url": "#"
+        },
+        {
+          "id": "ab-1",
+          "title": "Kobieta w centrum — słuchowisko",
+          "description": "Godzinne nagranie z moim głosem. Medytacje, ćwiczenia i inspiracje — słuchaj podczas spaceru.",
+          "price": "59 zł",
+          "image": "/images/audiobook-1.svg",
+          "badge": "Nowość",
           "url": "#"
         }
       ]

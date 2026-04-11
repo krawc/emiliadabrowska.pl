@@ -38,8 +38,11 @@ export default function PodcastPage() {
           >
             {content.podcastName}
           </h2>
-          <p className="text-stone-500 text-sm mb-5 leading-relaxed">
+          <p className="text-stone-500 text-sm mb-3 leading-relaxed">
             {content.podcastDescription}
+          </p>
+          <p className="text-xs tracking-widest uppercase text-stone-400 mb-5">
+            {content.hosts}
           </p>
           <div className="flex flex-wrap gap-2">
             {content.platforms.map((p) => (
