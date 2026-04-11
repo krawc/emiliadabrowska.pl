@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
@@ -23,10 +24,18 @@ export default function Sidebar() {
       {/* Desktop sidebar */}
       <aside className="hidden lg:flex flex-col fixed top-0 left-0 h-full w-64 bg-white border-r border-stone-100 z-40 px-8 py-10">
         <Link href="/" className="block mb-12">
-          <span className="font-serif text-2xl leading-tight tracking-tight text-stone-900">
-            [emilia
+          <Image
+            src="/images/logo.svg"
+            alt="Emilia Dąbrowska"
+            width={56}
+            height={56}
+            className="mb-3"
+            unoptimized
+          />
+          <span className="font-serif text-xl leading-tight tracking-tight text-stone-900">
+            Emilia
             <br />
-            :dąbrowska]
+            Dąbrowska
           </span>
         </Link>
 
@@ -90,8 +99,17 @@ export default function Sidebar() {
 
       {/* Mobile top bar */}
       <div className="lg:hidden fixed top-0 left-0 right-0 z-50 bg-white border-b border-stone-100 flex items-center justify-between px-6 h-14">
-        <Link href="/" className="font-serif text-lg tracking-tight text-stone-900">
-          [emilia :dąbrowska]
+        <Link href="/" className="flex items-center gap-2">
+          <Image
+            src="/images/logo.svg"
+            alt="Emilia Dąbrowska"
+            width={32}
+            height={32}
+            unoptimized
+          />
+          <span className="font-serif text-base tracking-tight text-stone-900">
+            Emilia Dąbrowska
+          </span>
         </Link>
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
