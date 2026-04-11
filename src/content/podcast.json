@@ -1,58 +1,29 @@
 {
   "meta": {
-    "title": "Podcast - Emilia Dąbrowska",
-    "description": "Kobieta w Centrum - podcast o kobiecej sile, samoświadomości i życiu na własnych warunkach."
+    "title": "Podcast Bez Wstydu – Emilia Dąbrowska",
+    "description": "Bez Wstydu – rozmowy o życiu bez tabu. O psychice, ciele, emocjach i trudzie bycia człowiekiem. Prowadzą: Emilia Dąbrowska i Iga Nasiek."
   },
   "heading": "Podcast",
-  "podcastName": "Kobieta w Centrum",
-  "podcastDescription": "Rozmawiam z inspirującymi kobietami o ich drodze do siebie. O kryzysach, przełomach i odwadze, żeby żyć po swojemu.",
+  "podcastName": "Bez wstydu",
+  "podcastDescription": "Rozmowy, których brakuje. O życiu bez tabu, bez stereotypów, bez lukru. Bo kiedy coś zostaje nazwane, przestaje być takie samotne.",
+  "hosts": "Emilia Dąbrowska & Iga Nasiek",
   "coverImage": "/images/podcast-cover.svg",
-  "coverImageAlt": "Kobieta w Centrum - okładka podcastu",
+  "coverImageAlt": "Bez wstydu – okładka podcastu",
   "platforms": [
     { "name": "Spotify", "url": "#" },
     { "name": "Apple Podcasts", "url": "#" },
     { "name": "Google Podcasts", "url": "#" }
   ],
-  "content": "<p>Podcast <strong>Kobieta w Centrum</strong> powstał z potrzeby serca. Chciałam stworzyć miejsce, gdzie kobiety mogą usłyszeć prawdziwe, nieocenzurowane historie innych kobiet - bez lukru i udawania, że wszystko jest idealnie.</p><p>Co dwa tygodnie rozmawiam z kobietami, które przeszły przez trudne doświadczenia i wyszły z nich silniejsze. Moimi gośćmi są przedsiębiorczynie, artystki, matki, liderki - kobiety z krwi i kości, które zdecydowały się żyć na własnych warunkach.</p>",
+  "content": "<p><strong>BEZ WSTYDU</strong> to rozmowy, których brakuje.</p><p>Rozmowy o życiu bez tabu. Bez stereotypów. Bez lukru. Bez udawania, że wszystko jest proste. Bo nie jest.</p><p>To refleksje o psychice, ciele, przyjemności i trudzie bycia człowiekiem w całej jego złożoności. Mówimy otwarcie o tym, co niewygodne, czułe i prawdziwe.</p><p>To spotkanie dwóch perspektyw: psychologicznej i ucieleśnionej. Wiedzy i doświadczenia. Głowy i ciała.</p><p>To podcast dla tych, którzy czują więcej i myślą głębiej.</p><p>Rozmawiamy o życiu bez filtrów. O emocjach, relacjach i samotności w świecie, który pędzi za szybko. Naszymi rozmowami próbujemy go na chwilę zatrzymać. Zatrzymać siebie. I Ciebie.</p><p>Może usłyszysz tu coś, co już w Tobie jest. Może znajdziesz słowa, które pomogą Ci opisać coś, czego tak długo nie dało się nazwać.</p><p>Bo kiedy coś zostaje nazwane, przestaje być takie samotne.</p>",
   "episodes": [
     {
-      "number": 42,
-      "title": "Kiedy wszystko się wali - jak znaleźć grunt pod nogami",
-      "guest": "Marta Kowalska",
-      "guestTitle": "terapeutka, autorka",
-      "duration": "58 min",
-      "date": "15 marca 2025",
-      "description": "Rozmawiamy o tym, jak przeżyć życiowe kryzysy i wyjść z nich z nową tożsamością.",
-      "url": "#"
-    },
-    {
-      "number": 41,
-      "title": "Prowadzenie biznesu z wartościami - czy to możliwe?",
-      "guest": "Anna Wiśniewska",
-      "guestTitle": "CEO & przedsiębiorczyni",
-      "duration": "62 min",
-      "date": "1 marca 2025",
-      "description": "Anna opowiada o budowaniu firmy, która nie kompromituje jej wartości - nawet gdy to kosztuje.",
-      "url": "#"
-    },
-    {
-      "number": 40,
-      "title": "Ciało jako sojusznik - intuicja i mądrość ciała",
-      "guest": "Zofia Adamska",
-      "guestTitle": "somatyczka, nauczycielka jogi",
-      "duration": "55 min",
-      "date": "15 lutego 2025",
-      "description": "Jak nauczyć się słuchać sygnałów ciała i przestać z nim walczyć.",
-      "url": "#"
-    },
-    {
-      "number": 39,
-      "title": "Perfekcjonizm - wróg czy sprzymierzeniec?",
-      "guest": "Emilia Dąbrowska",
-      "guestTitle": "(odcinek solo)",
-      "duration": "38 min",
-      "date": "1 lutego 2025",
-      "description": "Odcinek solo o tym, jak perfekcjonizm blokuje nas przed działaniem i jak z nim pracować.",
+      "number": 1,
+      "title": "Odcinek wkrótce",
+      "guest": "",
+      "guestTitle": "",
+      "duration": "",
+      "date": "",
+      "description": "Pierwsze odcinki pojawią się wkrótce. Śledź nas na Spotify, żeby nie przegapić premiery.",
       "url": "#"
     }
   ]

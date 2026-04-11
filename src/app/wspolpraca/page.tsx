@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import HtmlContent from "@/components/HtmlContent";
 import content from "@/content/wspolpraca.json";
 
@@ -16,7 +17,50 @@ export default function WspolpracaPage() {
       >
         {content.heading}
       </h1>
-      <HtmlContent html={content.content} />
+
+      <div className="flex flex-col">
+        {content.sections.map((section) => (
+          <div key={section.id} className="border-t border-stone-100 py-10">
+            <h2 className="text-xs tracking-widest uppercase text-stone-900 font-semibold mb-4">
+              {section.title}
+            </h2>
+            <p className="text-stone-600 leading-relaxed mb-4">
+              {section.intro}
+            </p>
+
+            {section.detail !== null && (
+              <details className="group">
+                <summary className="cursor-pointer list-none flex items-center gap-2 text-xs tracking-widest uppercase text-stone-400 hover:text-stone-900 transition-colors select-none">
+                  <span>Więcej</span>
+                  <svg
+                    className="transition-transform group-open:rotate-180"
+                    width="12"
+                    height="12"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                  >
+                    <path d="M6 9l6 6 6-6" />
+                  </svg>
+                </summary>
+                <div className="mt-4">
+                  <HtmlContent html={section.detail} />
+                </div>
+              </details>
+            )}
+
+            {section.linkHref !== null && (
+              <Link
+                href={section.linkHref}
+                className="inline-flex items-center gap-1 text-xs tracking-widest uppercase text-stone-400 hover:text-stone-900 transition-colors"
+              >
+                <span>› {section.linkText}</span>
+              </Link>
+            )}
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

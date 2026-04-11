@@ -1,8 +1,41 @@
 {
   "meta": {
-    "title": "Współpraca - Emilia Dąbrowska",
-    "description": "Oferta współpracy - sesje coachingowe, warsztaty, wykłady i programy grupowe."
+    "title": "Współpraca – Emilia Dąbrowska",
+    "description": "Oferta współpracy: program dla firm Szkoła Spokoju w Biznesie, sesje indywidualne, warsztaty, retreaty i wystąpienia gościnne."
   },
   "heading": "Współpraca",
-  "content": "<p class=\"lead\">Pracuję z kobietami indywidualnie i w grupach - online oraz stacjonarnie. Każda forma współpracy opiera się na <strong>uważności, zaufaniu i autentyczności</strong>.</p><h2>Coaching indywidualny</h2><p>Sesje 1:1 trwają 60 lub 90 minut. Spotykamy się regularnie (zwykle co 2 tygodnie) przez ustalony z góry czas - najczęściej 3 lub 6 miesięcy. Pracujemy z tym, co dla Ciebie ważne: życie zawodowe, relacje, tożsamość, zmiany życiowe.</p><ul><li>Pakiet 3 sesji próbnych - 900 zł</li><li>Pakiet 6 sesji (3 miesiące) - 1 800 zł</li><li>Pakiet 12 sesji (6 miesięcy) - 3 200 zł</li></ul><h2>Warsztaty grupowe</h2><p>Regularnie prowadzę <strong>warsztaty stacjonarne i online</strong> dla małych grup (8–12 osób). To przestrzeń do pracy w społeczności kobiet, które chcą rosnąć razem. Terminy warsztatów znajdziesz w zakładce <a href=\"/wydarzenia\">Wydarzenia</a>.</p><h2>Wykłady i szkolenia dla firm</h2><p>Prowadzę <strong>wykłady i szkolenia</strong> dla organizacji, które chcą wspierać kobiety w swoich zespołach. Tematy obejmują: dobrostan psychiczny, przywództwo kobiet, work-life balance, zarządzanie energią.</p><h2>Jak zacząć?</h2><p>Napisz do mnie przez <a href=\"/kontakt\">formularz kontaktowy</a> lub na adres <strong>emilia@emiliadabrowska.pl</strong>. Umówimy bezpłatną rozmowę odkrywczą (30 min), żeby sprawdzić, czy chcemy razem pracować.</p>"
+  "sections": [
+    {
+      "id": "program-dla-firm",
+      "title": "PROGRAM DLA FIRM: \"SZKOŁA SPOKOJU W BIZNESIE\"",
+      "intro": "Czyli całościowy proces wychodzenia z chronicznego stresu dla pracowników firm, ze szczególnym naciskiem na kadrę menedżerską.",
+      "detail": "<p>To kilkuetapowy proces, facylitowany przeze mnie na żywo. To również narzędzia i metody wspierające wprowadzenie i utrzymanie zmiany — w trakcie, jak i po zakończeniu programu.</p>",
+      "linkText": null,
+      "linkHref": null
+    },
+    {
+      "id": "sesje-indywidualne",
+      "title": "SESJE INDYWIDUALNE",
+      "intro": "Prowadzę psychoterapię osób dorosłych w moim gabinecie w Sochaczewie, jak również online z klientami z całej Polski oraz Polakami mieszkającymi za granicą.",
+      "detail": "<p>W mojej pracy korzystam z metod różnych szkół psychoterapii, jednak wiodącymi są: psychoterapia systemowa, egzystencjalna oraz praktyki somatic experiencing. Sesje indywidualne prowadzę w rytmie cotygodniowych, godzinnych spotkań.</p><p>Jeśli chcesz rozpocząć psychoterapię, wypełnij poniższy <a href=\"/kontakt\">formularz kontaktowy</a>. Ja, po zapoznaniu się z nim, wrócę z odpowiedzią dotyczącą możliwości współpracy lub jej braku.</p>",
+      "linkText": null,
+      "linkHref": null
+    },
+    {
+      "id": "warsztaty",
+      "title": "WARSZTATY, PROGRAMY GRUPOWE, KURSY ONLINE, RETREATY",
+      "intro": "To tematyczne warsztaty, programy grupowe, kurs jogi nidry oraz regeneracyjne wyjazdowe retreaty nastawione na odbudowę psychiczną, wzmacnianie odporności psychicznej i naukę prawdziwie regenerującego odpoczynku. Nadchodzące wydarzenia znajdziesz tutaj:",
+      "detail": null,
+      "linkText": "wydarzenia",
+      "linkHref": "/wydarzenia"
+    },
+    {
+      "id": "wystapienia-goscinne",
+      "title": "SPOTKANIA I WYSTĄPIENIA GOŚCINNE",
+      "intro": "Z wielką przyjemnością dzielę się moim doświadczeniem i wiedzą. Zapraszam do kontaktu, by łączyć siły i czynić dobro.",
+      "detail": null,
+      "linkText": "kontakt",
+      "linkHref": "/kontakt"
+    }
+  ]
 }
