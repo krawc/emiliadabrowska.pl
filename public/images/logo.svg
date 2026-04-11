@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 280" fill="none">
+  <!-- Outer frame top -->
+  <path d="M4 4 L276 4 L276 18 L4 18 Z" fill="#1a1a1a"/>
+  <!-- Outer frame bottom -->
+  <path d="M4 262 L276 262 L276 276 L4 276 Z" fill="#1a1a1a"/>
+  <!-- Outer frame left -->
+  <path d="M4 4 L18 4 L18 276 L4 276 Z" fill="#1a1a1a"/>
+  <!-- Outer frame right -->
+  <path d="M262 4 L276 4 L276 276 L262 276 Z" fill="#1a1a1a"/>
+
+  <!-- Vertical divider (at ~35% from left of inner area) -->
+  <path d="M88 4 L103 4 L103 276 L88 276 Z" fill="#1a1a1a"/>
+
+  <!-- Right panel fill (white/off-white) -->
+  <rect x="103" y="18" width="159" height="244" fill="#f5f5f4"/>
+
+  <!-- Left panel (dark) -->
+  <rect x="18" y="18" width="70" height="244" fill="#e8e4df"/>
+
+  <!-- Horizontal middle bar (E crossbar) -->
+  <path d="M4 128 L103 128 L103 144 L4 144 Z" fill="#1a1a1a"/>
+</svg>
