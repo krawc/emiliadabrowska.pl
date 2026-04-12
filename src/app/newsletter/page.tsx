@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import MailerLiteForm from "@/components/MailerLiteForm";
 
 export const metadata: Metadata = {
   title: "Newsletter – Emilia Dąbrowska",
@@ -21,12 +22,7 @@ export default function NewsletterPage() {
       <p className="text-stone-600 leading-relaxed mb-10">
         Za zapis czeka na Ciebie prezent powitalny.
       </p>
-
-      {/*
-        Wklej tutaj kod formularza z MailerLite:
-        Forms → Embedded forms → wybierz formularz → "Embed code" → skopiuj div + script
-        Przykład: <div class="ml-embedded" data-form="TWÓJ_FORM_ID"></div>
-      */}
+      <MailerLiteForm />
     </div>
   );
 }
