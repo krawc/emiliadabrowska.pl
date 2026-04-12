@@ -17,7 +17,7 @@ export async function sendContactEmail(formData: FormData) {
   try {
     await resend.emails.send({
       from: "Formularz kontaktowy <onboarding@resend.dev>",
-      to: "emilia@emiliadabrowska.pl",
+      to: "kontakt@emiliadabrowska.pl",
       replyTo: email,
       subject: subject ? `[Kontakt] ${subject}` : `[Kontakt] Nowa wiadomość od ${name}`,
       text: `Imię i nazwisko: ${name}\nEmail: ${email}\nTemat: ${subject || "—"}\n\n${message}`,
