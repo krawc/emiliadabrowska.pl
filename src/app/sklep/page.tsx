@@ -29,9 +29,9 @@ export default function SklepPage() {
           <h2 className="text-xs tracking-widest uppercase text-stone-400 mb-6 pb-3 border-b border-stone-100">
             {category.name}
           </h2>
-          {category.items.length === 0 ? (
+          {category.items.length === 0 && (
             <p className="text-stone-400 text-sm">Ta sekcja jest na razie pusta.</p>
-          ) : (
+          )}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {category.items.map((item) => (
               <div
@@ -77,7 +77,6 @@ export default function SklepPage() {
               </div>
             ))}
           </div>
-          )}
         </section>
       ))}
     </div>
