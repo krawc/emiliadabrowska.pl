@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { sendContactEmail } from "@/app/actions/sendEmail";
 
 interface FormField {
   name: string;
@@ -17,16 +18,26 @@ interface ContactFormProps {
 
 export default function ContactForm({ fields, submitLabel }: ContactFormProps) {
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const [values, setValues] = useState<Record<string, string>>({});
 
   function handleChange(name: string, value: string) {
     setValues((prev) => ({ ...prev, [name]: value }));
   }
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    // In production: send to an API endpoint
-    setSubmitted(true);
+    setLoading(true);
+    setError(null);
+    const formData = new FormData(e.currentTarget);
+    const result = await sendContactEmail(formData);
+    setLoading(false);
+    if (result.success) {
+      setSubmitted(true);
+    } else {
+      setError(result.error ?? "Coś poszło nie tak.");
+    }
   }
 
   if (submitted) {
@@ -89,11 +100,16 @@ export default function ContactForm({ fields, submitLabel }: ContactFormProps) {
         </div>
       ))}
 
+      {error && (
+        <p className="text-sm text-red-600">{error}</p>
+      )}
+
       <button
         type="submit"
-        className="mt-2 border border-stone-900 text-stone-900 text-xs tracking-widest uppercase py-4 hover:bg-stone-900 hover:text-white transition-colors"
+        disabled={loading}
+        className="mt-2 border border-stone-900 text-stone-900 text-xs tracking-widest uppercase py-4 hover:bg-stone-900 hover:text-white transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
       >
-        {submitLabel}
+        {loading ? "Wysyłanie…" : submitLabel}
       </button>
     </form>
   );
