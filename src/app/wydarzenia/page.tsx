@@ -20,6 +20,10 @@ export default function WydarzeniaPage() {
       </h1>
       <HtmlContent html={content.content} className="mb-12" />
 
+      {content.events.length === 0 && (
+        <p className="text-stone-400 text-sm">Ta sekcja jest na razie pusta.</p>
+      )}
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {content.events.map((event) => (
           <div key={event.id} className="flex flex-col border border-stone-100 overflow-hidden hover:border-stone-300 transition-colors">
