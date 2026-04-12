@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import MailerLiteForm from "@/components/MailerLiteForm";
 
 export const metadata: Metadata = {
   title: "Newsletter – Emilia Dąbrowska",
@@ -21,11 +22,7 @@ export default function NewsletterPage() {
       <p className="text-stone-600 leading-relaxed mb-10">
         Za zapis czeka na Ciebie prezent powitalny.
       </p>
-
-      {/* Mailerlite embed — wstaw tutaj kod formularza z MailerLite */}
-      <div className="border border-dashed border-stone-200 rounded p-8 text-center text-stone-400 text-sm">
-        Formularz zapisu (integracja z MailerLite — wstaw kod embed tutaj)
-      </div>
+      <MailerLiteForm />
     </div>
   );
 }

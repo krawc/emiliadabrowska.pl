@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Inter } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import Sidebar from "@/components/Sidebar";
 
@@ -34,6 +35,13 @@ export default function RootLayout({
         <main className="lg:ml-64 pt-14 lg:pt-0 min-h-screen">
           {children}
         </main>
+        <Script id="mailerlite-universal" strategy="afterInteractive">{`
+          (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+          .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+          n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+          (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+          ml('account', '1817847');
+        `}</Script>
       </body>
     </html>
   );
