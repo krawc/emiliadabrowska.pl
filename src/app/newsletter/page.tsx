@@ -22,10 +22,11 @@ export default function NewsletterPage() {
         Za zapis czeka na Ciebie prezent powitalny.
       </p>
 
-      {/* Mailerlite embed — wstaw tutaj kod formularza z MailerLite */}
-      <div className="border border-dashed border-stone-200 rounded p-8 text-center text-stone-400 text-sm">
-        Formularz zapisu (integracja z MailerLite — wstaw kod embed tutaj)
-      </div>
+      {/*
+        Wklej tutaj kod formularza z MailerLite:
+        Forms → Embedded forms → wybierz formularz → "Embed code" → skopiuj div + script
+        Przykład: <div class="ml-embedded" data-form="TWÓJ_FORM_ID"></div>
+      */}
     </div>
   );
 }
