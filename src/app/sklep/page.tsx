@@ -20,7 +20,7 @@ type Category = {
   items: ShopItem[];
 };
 
-const content = rawContent as typeof rawContent & { categories: Category[] };
+const content = { ...rawContent, categories: rawContent.categories as Category[] };
 
 export const metadata: Metadata = {
   title: content.meta.title,
