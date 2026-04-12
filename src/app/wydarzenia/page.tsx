@@ -2,7 +2,24 @@ import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import HtmlContent from "@/components/HtmlContent";
-import content from "@/content/wydarzenia.json";
+import rawContent from "@/content/wydarzenia.json";
+
+type Event = {
+  id: number;
+  title: string;
+  type: string;
+  date: string;
+  time: string;
+  location: string;
+  locationOnline: boolean;
+  description: string;
+  price: string;
+  spotsLeft: number;
+  image: string;
+  ticketUrl: string;
+};
+
+const content = { ...rawContent, events: rawContent.events as Event[] };
 
 export const metadata: Metadata = {
   title: content.meta.title,
