@@ -2,7 +2,25 @@ import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import HtmlContent from "@/components/HtmlContent";
-import content from "@/content/sklep.json";
+import rawContent from "@/content/sklep.json";
+
+type ShopItem = {
+  id: string;
+  title: string;
+  description: string;
+  price: string;
+  image: string;
+  badge: string | null;
+  url: string;
+};
+
+type Category = {
+  id: string;
+  name: string;
+  items: ShopItem[];
+};
+
+const content = rawContent as typeof rawContent & { categories: Category[] };
 
 export const metadata: Metadata = {
   title: content.meta.title,
