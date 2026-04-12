@@ -25,7 +25,7 @@ export default function Sidebar() {
       <aside className="hidden lg:flex flex-col fixed top-0 left-0 h-full w-64 bg-white border-r border-stone-100 z-40 px-8 py-10">
         <Link href="/" className="block mb-12">
           <Image
-            src="/images/logo.svg"
+            src="/images/ed_monogram.png"
             alt="Emilia Dąbrowska"
             width={56}
             height={56}
