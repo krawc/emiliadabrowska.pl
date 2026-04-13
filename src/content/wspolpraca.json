@@ -8,6 +8,8 @@
     {
       "id": "program-dla-firm",
       "title": "PROGRAM DLA FIRM: \"SZKOŁA SPOKOJU W BIZNESIE\"",
+      "image": "/images/dla_firm.jpg",
+      "imageAlt": "Program dla firm – Szkoła Spokoju w Biznesie",
       "intro": "Czyli całościowy proces wychodzenia z chronicznego stresu dla pracowników firm, ze szczególnym naciskiem na kadrę menedżerską.",
       "detail": "<p>To kilkuetapowy proces, facylitowany przeze mnie na żywo. To również narzędzia i metody wspierające wprowadzenie i utrzymanie zmiany — w trakcie, jak i po zakończeniu programu.</p>",
       "linkText": null,
@@ -16,6 +18,8 @@
     {
       "id": "sesje-indywidualne",
       "title": "SESJE INDYWIDUALNE",
+      "image": "/images/sesje.jpg",
+      "imageAlt": "Sesje indywidualne",
       "intro": "Prowadzę psychoterapię osób dorosłych w moim gabinecie w Sochaczewie, jak również online z klientami z całej Polski oraz Polakami mieszkającymi za granicą.",
       "detail": "<p>W mojej pracy korzystam z metod różnych szkół psychoterapii, jednak wiodącymi są: psychoterapia systemowa, egzystencjalna oraz praktyki somatic experiencing. Sesje indywidualne prowadzę w rytmie cotygodniowych, godzinnych spotkań.</p><p>Jeśli chcesz rozpocząć psychoterapię, wypełnij poniższy <a href=\"/kontakt\">formularz kontaktowy</a>. Ja, po zapoznaniu się z nim, wrócę z odpowiedzią dotyczącą możliwości współpracy lub jej braku.</p>",
       "linkText": null,
@@ -24,6 +28,8 @@
     {
       "id": "warsztaty",
       "title": "WARSZTATY, PROGRAMY GRUPOWE, KURSY ONLINE, RETREATY",
+      "image": "/images/warsztaty.jpg",
+      "imageAlt": "Warsztaty i programy grupowe",
       "intro": "To tematyczne warsztaty, programy grupowe, kurs jogi nidry oraz regeneracyjne wyjazdowe retreaty nastawione na odbudowę psychiczną, wzmacnianie odporności psychicznej i naukę prawdziwie regenerującego odpoczynku. Nadchodzące wydarzenia znajdziesz tutaj:",
       "detail": null,
       "linkText": "wydarzenia",
@@ -32,6 +38,8 @@
     {
       "id": "wystapienia-goscinne",
       "title": "SPOTKANIA I WYSTĄPIENIA GOŚCINNE",
+      "image": "/images/spotkania.jpg",
+      "imageAlt": "Spotkania i wystąpienia gościnne",
       "intro": "Z wielką przyjemnością dzielę się moim doświadczeniem i wiedzą. Zapraszam do kontaktu, by łączyć siły i czynić dobro.",
       "detail": null,
       "linkText": "kontakt",

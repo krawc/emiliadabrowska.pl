@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import HtmlContent from "@/components/HtmlContent";
 import content from "@/content/wspolpraca.json";
@@ -21,6 +22,17 @@ export default function WspolpracaPage() {
       <div className="flex flex-col">
         {content.sections.map((section) => (
           <div key={section.id} className="border-t border-stone-100 py-10">
+            {section.image && (
+              <div className="relative w-full aspect-[3/2] mb-6 overflow-hidden">
+                <Image
+                  src={section.image}
+                  alt={section.imageAlt}
+                  fill
+                  className="object-cover"
+                  unoptimized
+                />
+              </div>
+            )}
             <h2 className="text-xs tracking-widest uppercase text-stone-900 font-semibold mb-4">
               {section.title}
             </h2>
