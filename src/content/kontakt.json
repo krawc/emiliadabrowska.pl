@@ -4,11 +4,16 @@
     "description": "Skontaktuj się z Emilią Dąbrowską – psychoterapia, program dla firm, warsztaty, wystąpienia gościnne."
   },
   "heading": "Kontakt",
-  "content": "<p>Napisz do mnie — chętnie odpiszę na każdą wiadomość. Staram się odpowiadać w ciągu 2–3 dni roboczych.</p>",
+  "intro": "Zapraszam do kontaktu.",
   "email": "kontakt@emiliadabrowska.pl",
+  "manager": {
+    "context": "Jeśli chcesz porozmawiać telefonicznie o współpracy dotyczącej wdrożenia programu Szkoła Spokoju w Biznesie lub o innym ciekawym pomyśle związanym ze wsparciem Twojej organizacji, zadzwoń do mojego managera:",
+    "name": "Artur Krawczyk",
+    "phone": "+48 534 400 337"
+  },
   "social": [
-    { "name": "Facebook", "handle": "Emilia Dąbrowska", "url": "#" },
-    { "name": "Instagram", "handle": "@emiliadabrowska", "url": "#" },
+    { "name": "Facebook", "handle": "emiliadabrowskapl", "url": "https://www.facebook.com/emiliadabrowskapl" },
+    { "name": "Instagram", "handle": "@emiliadabrowska.pl", "url": "https://www.instagram.com/emiliadabrowska.pl" },
     { "name": "Spotify", "handle": "Bez wstydu", "url": "#" }
   ],
   "formFields": [
