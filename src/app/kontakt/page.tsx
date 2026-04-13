@@ -1,5 +1,4 @@
 import { Metadata } from "next";
-import HtmlContent from "@/components/HtmlContent";
 import ContactForm from "@/components/ContactForm";
 import content from "@/content/kontakt.json";
 
@@ -17,29 +16,45 @@ export default function KontaktPage() {
       >
         {content.heading}
       </h1>
-      <HtmlContent html={content.content} className="mb-2" />
+      <p className="text-stone-600 leading-relaxed mb-10">{content.intro}</p>
 
-      <div className="mb-8 text-sm text-stone-500">
+      {/* 1. Formularz */}
+      <ContactForm fields={content.formFields} submitLabel={content.submitLabel} />
+
+      {/* 2. Kontakt telefoniczny (manager) */}
+      <div className="mt-12 border-t border-stone-100 pt-10">
+        <p className="text-stone-600 text-sm leading-relaxed mb-3">
+          {content.manager.context}
+        </p>
+        <p className="text-stone-900 font-medium">{content.manager.name}</p>
+        <a
+          href={`tel:${content.manager.phone.replace(/\s/g, "")}`}
+          className="text-stone-500 hover:text-stone-900 transition-colors text-sm"
+        >
+          {content.manager.phone}
+        </a>
+      </div>
+
+      {/* 3. Email + social */}
+      <div className="mt-10 border-t border-stone-100 pt-10 flex flex-col gap-3 text-sm">
         <a
           href={`mailto:${content.email}`}
           className="text-stone-900 underline underline-offset-2 hover:text-stone-500 transition-colors"
         >
           {content.email}
         </a>
-        <div className="flex gap-4 mt-3">
+        <div className="flex gap-4">
           {content.social.map((s) => (
             <a
               key={s.name}
               href={s.url}
-              className="text-stone-400 hover:text-stone-900 transition-colors text-sm"
+              className="text-stone-400 hover:text-stone-900 transition-colors"
             >
-              {s.name}: {s.handle}
+              {s.name}
             </a>
           ))}
         </div>
       </div>
-
-      <ContactForm fields={content.formFields} submitLabel={content.submitLabel} />
     </div>
   );
 }
